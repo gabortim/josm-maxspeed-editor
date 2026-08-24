@@ -51,5 +51,6 @@ jobs:
         with:
           tag_name: ${{ inputs.tag_name || github.ref_name }}
           files: build/dist/*.jar
+          body: For summarised changes, see [CHANGELOG.md](CHANGELOG.md).
           generate_release_notes: true
           prerelease: ${{ inputs.prerelease }}
