@@ -29,9 +29,10 @@ tasks.withType<JavaCompile>().configureEach {
 //------------------------------
 
 josm {
-    pluginName = "MaxSpeedEditorPlugin"
+    pluginName = "MaxSpeedEditor"
     josmCompileVersion = "19613"
     manifest {
+        author = "gaben"
         mainClass = "com.github.gabortim.MaxSpeedEditorPlugin"
         description = "Helps to tag maxspeed on highways. An overlay UI pops up on selected highways, speeding up editing."
         minJosmVersion = "18583"
