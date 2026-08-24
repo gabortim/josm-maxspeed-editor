@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <!-- Road Surface Base -->
+    <rect x="1.5" y="1.5" width="8" height="21" rx="2" fill="#2C3E50"/>
+
+    <!-- Dashed Center Road Line -->
+    <line x1="5.5" y1="3" x2="5.5" y2="6" stroke="#ECF0F1" stroke-width="0.8" stroke-linecap="round"/>
+    <line x1="5.5" y1="10.5" x2="5.5" y2="13.5" stroke="#ECF0F1" stroke-width="0.8" stroke-linecap="round"/>
+    <line x1="5.5" y1="18" x2="5.5" y2="21" stroke="#ECF0F1" stroke-width="0.8" stroke-linecap="round"/>
+
+    <!-- Forward Direction Arrow (Upward, Green) -->
+    <path d="M7.5 7.5 L7.5 4.5 M6.3 5.5 L7.5 4 L8.7 5.5" fill="none" stroke="#2ECC71" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Backward Direction Arrow (Downward, Orange) -->
+    <path d="M3.5 16.5 L3.5 19.5 M2.3 18.5 L3.5 20 L4.7 18.5" fill="none" stroke="#E67E22" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Speed Limit Sign Outer Shadow -->
+    <circle cx="15.5" cy="12" r="7.5" fill="#000000" fill-opacity="0.15"/>
+
+    <!-- Speed Limit Sign Red Border -->
+    <circle cx="15" cy="11.5" r="7.5" fill="#E74C3C"/>
+
+    <!-- Speed Limit Sign White Inner Core -->
+    <circle cx="15" cy="11.5" r="5.5" fill="#FFFFFF"/>
+
+    <!-- Speed Number "50" -->
+    <text x="15" y="14.2"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="6.8"
+          font-weight="900"
+          text-anchor="middle"
+          fill="#2C3E50"
+          letter-spacing="-0.5">50</text>
+</svg>
