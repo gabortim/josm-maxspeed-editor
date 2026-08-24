@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out MaxSpeed Editor
+        uses: actions/checkout@v7
+
+      - name: Check out modernized Gradle JOSM plugin
+        env:
+          GH_TOKEN: ${{ secrets.GRADLE_JOSM_PLUGIN_TOKEN }}
+        run: >-
+          gh repo clone gabortim/gradle-josm-plugin
+          ../gradle-josm-plugin
+          -- --depth 1 --branch gradle-modernization
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: gradle
+
+      - name: Build
+        run: ./gradlew clean test jar
+
+      - name: Upload JAR artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: maxspeed-editor-jar
+          path: build/libs/*.jar
