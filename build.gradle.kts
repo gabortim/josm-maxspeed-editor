@@ -1,3 +1,5 @@
+import java.net.URI
+
 plugins {
     id("java")
     id("org.openstreetmap.josm")
@@ -39,5 +41,6 @@ josm {
         minJavaVersion = javaCompileVersion
         iconPath = "images/icon.svg"
         canLoadAtRuntime = true
+        website = URI("https://github.com/gabortim/josm-maxspeed-editor").toURL()
     }
 }

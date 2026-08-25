@@ -37,7 +37,7 @@ public class MaxSpeedToggleAction extends ToggleAction {
     public MaxSpeedToggleAction(boolean initialState, Consumer<Boolean> onToggleCallback) {
         super(
                 tr("MaxSpeed Editor"),
-                new ImageProvider("icon.svg"),
+                new ImageProvider("maxspeed_editor.svg"),
                 tr("Toggle MaxSpeed Editor popup on highway click"),
                 Shortcut.registerShortcut(
                         "menu:maxspeed:toggle",
