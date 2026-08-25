@@ -1,4 +1,4 @@
-# <img src="src/main/resources/images/icon.svg" width=40px> MaxSpeed Editor
+# <img src="src/main/resources/images/maxspeed_editor.svg" width=40px> MaxSpeed Editor
 
 MaxSpeed Editor is a small [JOSM](https://josm.openstreetmap.de/) plugin for quickly editing `maxspeed`, `maxspeed:forward` and `maxspeed:backward` on selected highways. It provides configurable speed presets, direction labels based on the clicked road segment, one-way-aware controls and atomic undo/redo operations.
 
