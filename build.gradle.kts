@@ -39,7 +39,7 @@ josm {
         description = "Helps to tag maxspeed on highways. An overlay UI pops up on selected highways, speeding up editing."
         minJosmVersion = "18583"
         minJavaVersion = javaCompileVersion
-        iconPath = "images/icon.svg"
+        iconPath = "images/maxspeed_editor.svg"
         canLoadAtRuntime = true
         website = URI("https://github.com/gabortim/josm-maxspeed-editor").toURL()
     }
